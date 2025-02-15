@@ -1,0 +1,53 @@
+
+#  窗口最大化
+self.driver.maximize_window()
+# 智能等待
+self.driver.implicitly_wait(5)
+
+
+# 弹窗
+wb.switch_to.alert.accept()
+# 同意  alert.accept()
+# 取消  alert.dismiss()
+
+
+# select
+# select1 = Select(wb.find_element(By.CSS_SELECTOR,'button').click())
+# select1.select_by_index('测试')
+# select2 = Select(wb.find_element(By.XPATH,'button').click())
+# select2.select_by_value('测试')
+
+# ActionChains方法
+from selenium.webdriver.common.action_chains import ActionChains
+actions = ActionChains(wd)
+loging_button = wd.find_element(By.XPATH, '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[3]/button')
+actions.click(loging_button).perform()
+# 右键
+# actions.context_click(loging_button).perform()
+# 双击
+actions.double_click(loging_inp).perform()
+
+# 滚动下拉条
+wb.execute_script('window.scrollTo(0, 500)')
+
+
+# 通过window_handles方法将标签页切换到第二个标签
+self.driver.switch_to.window(driver.window_handles[1])
+
+# 点击查看供应商弹窗右上角的X
+# 使用XPATH定位标签
+
+
+# 使用arguments关键字删除“查看”按钮的target属性
+#a=driver.find_element(By.XPATH,'*[@id="app"]/div/div[2]/section/div/div[3]/div[3]/table/tbody/tr/td[6]/div/button[1]/span/a')
+# driver.execute_script("arguments[0].removeAttribute('target')",a)
+
+
+# 断言
+# try:
+#      self.assertEqual('','')
+# except:
+#
+# 截图
+# self.driver.get_screenshot_as_file(r'C:\Users\Lenovo\Pictures\联想截图\test_Select01.png')
+
