@@ -35,7 +35,7 @@ wb.execute_script('window.scrollTo(0, 500)')
 self.driver.switch_to.window(driver.window_handles[1])
 
 # 点击查看供应商弹窗右上角的X
-# 使用XPATH定位标签
+# 使用完整的XPATH标签，定位标签
 
 
 # 使用arguments关键字删除“查看”按钮的target属性
