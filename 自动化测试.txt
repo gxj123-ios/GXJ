@@ -11,7 +11,7 @@ wb.switch_to.alert.accept()
 # 取消  alert.dismiss()
 
 
-# select
+# Select
 # select1 = Select(wb.find_element(By.CSS_SELECTOR,'button').click())
 # select1.select_by_index('测试')
 # select2 = Select(wb.find_element(By.XPATH,'button').click())
@@ -49,5 +49,5 @@ self.driver.switch_to.window(driver.window_handles[1])
 # except:
 #
 # 截图
-# self.driver.get_screenshot_as_file(r'C:\Users\Lenovo\Pictures\联想截图\test_Select01.png')
+#      self.driver.get_screenshot_as_file(r'C:\Users\Lenovo\Pictures\联想截图\test_Select01.png')
 
